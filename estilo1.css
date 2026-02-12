@@ -8,8 +8,9 @@ body {
 
 
 #container {
+    width: 100%;
+    max-width: 1080px;
     margin: 0 auto;
-    width: 1080px;
 
 }
 
@@ -22,6 +23,7 @@ a:visited {
 
 a:hover {
     color: #227115;
+    
 }
 
 /***** Logo *******/
@@ -122,7 +124,7 @@ section#galeria img {
 article#video {
     float: left;
     width: 310px;
-    margin-left: 25px;
+    
 }
 
 article#mapa {
@@ -134,10 +136,10 @@ article#mapa {
 article#exposições {
     float: left;
     width: 310px;
-    margin: 15px 0 0 25px;
+    
 }
 
-article#história {
+article#historia {
     float: left;
     width: 310px;
     margin: 15px 0 0 37px;
@@ -165,11 +167,13 @@ footer {
     text-align: center;
     background: url(img/fundo-rodape.png) no-repeat center top;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 footer>p a {
     padding: 2px 10px;
     text-transform: uppercase;
+    
 }
 
 /**** Formulários ******/
@@ -224,16 +228,27 @@ legend {
 /* Responsividade */
 
 @media (max-width: 600px) {
-    #container, #principal, #postagens {
+    #principal, #postagens {
         flex-direction: column;
         display: flex;
-        width: 90%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         justify-content: center;
         align-items: center;
     }
 
-    #conteudo {
-        width: 90%;
+    
+
+    #container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #conteudo, aside  {
+        width: 100%;
+        float: none;
+
     }
 
     #postagens {
@@ -246,29 +261,18 @@ legend {
         
     } 
 
-    .full {
-        background-image: url('./img/museu.png') no-repeat;
+    #capa img{
+        /* background-image: url('./img/museu.png') no-repeat;
         background-size: cover;
-        width: 100vw;
-    }
+        width: 100vw; */
 
-     
-
-    /*
-    #capa > img {
-         width: 100vw;
-        background-size: cover;
-        margin: 0 auto;
-        background: black; 
-        align-items: center; 
-        flex: 1; 
-        background-size: cover;
         width: 100%;
-        
-        
-    }
-        */
+        height: auto;
+        display: block;
 
+    }
+
+    
     #menu {
         /* display: block;  */
         display: flex;
@@ -277,7 +281,7 @@ legend {
         width: 100%;
         top: 70px;
         right: 0;
-        background-color: #227115;
+        background-color: #af670a;
         height: 0;
         transition: .6s;
         z-index: 1000;
@@ -285,20 +289,41 @@ legend {
         overflow-y: hidden;
     }
 
+        /* CORREÇÃO: menu fechado não cobre o site */
+    #menu {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* CORREÇÃO: menu aberto aparece normalmente */
+    #nav.active #menu {
+        opacity: 1;
+        pointer-events: auto;
+        background-color: #af670a; /* ou a cor que você quiser */
+    }
+
+
+    article#mapa {
+        margin-left: 0!important;
+    }
+
+    article#historia {
+        margin-left: 0!important;
+    }
+
     #menu li a {
-        color: red;
+        color: #fff;
     }
 
     #menu a:hover {
         color: #000;
-
     }
 
     nav ul {
         margin: 0!important;
     }
 
-    #conteudo.active #menu {
+    #nav.active #menu {
         height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: auto;
@@ -307,7 +332,7 @@ legend {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        /* border-bottom: 2px solid rgba(0, 0, 0, 0.5); */
     }
 
     #btn-mobile {
@@ -344,21 +369,33 @@ legend {
   top: 0; */
     }
 
-    #conteudo.active #hamburguer {
+    #nav.active #hamburguer {
         border-top-color: transparent;
     }
 
-    #conteudo.active #hamburguer::before {
+    #nav.active #hamburguer::before {
         transform: rotate(135deg);
     }
 
-    #conteudo.active #hamburguer::after {
+    #nav.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    #depoimento { width: 100%; text-align: center; } #depoimento img { width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    footer p:first-of-type a { 
+        display: block; 
+        margin: 5px 0; 
+    } 
+    
+    footer p { 
+        text-align: center; }
     
 
 }
+
+
 
 
 

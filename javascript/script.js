@@ -5,7 +5,7 @@ function toggleMenu(event) {
     if(event.type === 'touchstart') {
         eventpreventDefault();
     } 
-    const nav = document.getElementById('conteudo');
+    const nav = document.getElementById('nav');
     nav.classList.toggle('active');
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active)
