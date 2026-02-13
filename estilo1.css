@@ -118,7 +118,12 @@ section#galeria a {
 
 section#galeria img {
     margin-left: 2px;
-    margin-top: 3px;
+    margin-top: 3px; 
+}
+
+section#galeria img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease; /* Efeito suave */
 }
 
 article#video {
@@ -180,7 +185,7 @@ footer>p a {
 
 input {
     height: 20px;
-    width: 80px;
+    width: 95px;
     background: #fff;
     border: none;
     font-size: 1em;
@@ -192,13 +197,16 @@ input.campo {
 }
 
 input.botao {
-    background: #9b9271;
+    /* background: #9b9271; */
+    background: #86521a;
     color: white;
     width: 100%;
     height: 40px;
     font-size: 1.2em;
     cursor: pointer;
 }
+
+
 
 fieldset {
     border: none;

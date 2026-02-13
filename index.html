@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--AOS init-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 <![endif]-->
@@ -90,15 +95,15 @@
                     <form action="">
                         <fieldset>
                             <legend>Selecione uma data</legend>
-                            <label for="data">Data</label>
-                            <input class="campo" type="data" id="data" value="dd/mm/aaaa"  >
+                            <label for="data">Data:</label>
+                            <input class="campo" type="date" id="data" name="data">
 
                             <label for="qtd">Qtd Pessoas</label>
-                            <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+                            <input class="campo" style="width: 35px;" type="number" id="qtd" min="1" max="15" value="0">
 
                         </fieldset>
 
-                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                        <input class="botao" type="submit" value="Verificar disponibilidade" onclick="">
                         
 
                     </form>
@@ -106,10 +111,10 @@
 
                 <section id="galeria">
                     <h4>Galeria de fotos</h4>
-                    <a href=""><img src="./img/imagem1.jpg" alt="" height="93" width="93"></a>
-                    <a href=""><img src="./img/imagem2.jpg" alt="" height="93" width="93"></a>
-                    <a href=""><img src="./img/imagem3.jpg" alt="" height="93" width="93"></a>
-                    <a href=""><img src="./img/imagem4.jpg" alt="" height="93" width="93"></a>
+                    <a href="#"><img src="./img/imagem1.jpg" alt="" height="93" width="93"></a>
+                    <a href="#"><img src="./img/imagem2.jpg" alt="" height="93" width="93"></a>
+                    <a href="#"><img src="./img/imagem3.jpg" alt="" height="93" width="93"></a>
+                    <a href="#"><img src="./img/imagem4.jpg" alt="" height="93" width="93"></a>
                 </section>
             </aside><!--Fim Aside-->
             <footer>

@@ -1,3 +1,4 @@
+AOS.init();
 
 const btnMobile = document.getElementById('btn-mobile');
 
