@@ -9,13 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 #container {
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
-
 }
 
 a:link,
@@ -27,14 +24,12 @@ a:visited {
 
 a:hover {
     color: #227115;
-    
 }
 
 /***** Logo *******/
 
 #logo h1 {
     float: left;
-
 }
 
 #logo a {
@@ -43,24 +38,16 @@ a:hover {
     background: url(img/logo.png) no-repeat;
     text-indent: -9999px;
     display: block;
-
 }
 
 /**** Barra de navegação ******/
-
-/* header {
-    padding: 15px 0;
-    height: 55px;
-} */
 
 #header {
     display: flex;
     align-items: center;
     height: 70px;
-    /* padding: 1rem;  */
     box-sizing: border-box;
     justify-content: space-between;
-    /* background-color: #e7e7e7; */
 }
 
 nav ul {
@@ -78,7 +65,6 @@ nav ul li a:link {
     margin-right: 20px;
     padding-bottom: 3px;
     text-transform: uppercase;
-
 }
 
 nav ul li a:hover {
@@ -90,7 +76,6 @@ nav ul li a:hover {
 #conteudo {
     width: 710px;
     float: left;
-
 }
 
 aside {
@@ -99,7 +84,6 @@ aside {
     background: #ebe7dd;
     padding-bottom: 30px;
     margin-bottom: 20px;
-
 }
 
 section#visita {
@@ -133,7 +117,6 @@ section#galeria img:hover {
 article#video {
     float: left;
     width: 310px;
-    
 }
 
 article#mapa {
@@ -145,7 +128,6 @@ article#mapa {
 article#exposicoes {
     float: left;
     width: 310px;
-    
 }
 
 article#historia {
@@ -182,7 +164,6 @@ footer {
 footer>p a {
     padding: 2px 10px;
     text-transform: uppercase;
-    
 }
 
 /**** Formulários ******/
@@ -193,7 +174,6 @@ input {
     background: #fff;
     border: none;
     font-size: 1em;
-
 }
 
 input.campo {
@@ -201,7 +181,6 @@ input.campo {
 }
 
 input.botao {
-    /* background: #9b9271; */
     background: #86521a;
     color: white;
     width: 100%;
@@ -209,8 +188,6 @@ input.botao {
     font-size: 1.2em;
     cursor: pointer;
 }
-
-
 
 fieldset {
     border: none;
@@ -228,14 +205,12 @@ legend {
 
 #menu a {
     display: block;
-    /* padding: .5rem; */
 }
 
 /* Aqui vou deixar o menu invisível para desktop */
 #btn-mobile {
     display: none;
 }
-
 
 /* Responsividade */
 
@@ -250,8 +225,6 @@ legend {
         align-items: center;
     }
 
-    
-
     #container {
         width: 100%;
         max-width: 100%;
@@ -260,7 +233,6 @@ legend {
     #conteudo, aside  {
         width: 100%;
         float: none;
-
     }
 
     #postagens {
@@ -270,23 +242,16 @@ legend {
     #capa {
         display: flex;
         justify-content: center;
-        
     } 
 
     #capa img{
-        /* background-image: url('./img/museu.png') no-repeat;
-        background-size: cover;
-        width: 100vw; */
-
         width: 100%;
         height: auto;
         display: block;
-
     }
 
     
     #menu {
-        /* display: block;  */
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -301,7 +266,8 @@ legend {
         overflow-y: hidden;
     }
 
-        /* CORREÇÃO: menu fechado não cobre o site */
+    /* CORREÇÃO: menu fechado não cobre o site */
+
     #menu {
         opacity: 0;
         pointer-events: none;
@@ -311,9 +277,8 @@ legend {
     #nav.active #menu {
         opacity: 1;
         pointer-events: auto;
-        background-color: #af670a; /* ou a cor que você quiser */
+        background-color: #af670a; 
     }
-
 
     article#mapa {
         margin-left: 0!important;
@@ -344,7 +309,6 @@ legend {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        /* border-bottom: 2px solid rgba(0, 0, 0, 0.5); */
     }
 
     #btn-mobile {
@@ -375,10 +339,6 @@ legend {
         transition: .3s;
         position: relative;
         background: black;
-  /* display: block;
-  position: absolute;
-  right: 0;
-  top: 0; */
     }
 
     #nav.active #hamburguer {
@@ -394,7 +354,17 @@ legend {
         top: -7px;
     }
 
-    #depoimento { width: 100%; text-align: center; } #depoimento img { width: 100%; height: auto; display: block; margin: 0 auto; }
+    #depoimento { 
+        width: 100%; 
+        text-align: center;
+    }
+         
+    #depoimento img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
     footer p:first-of-type a { 
         display: block; 
@@ -403,8 +373,6 @@ legend {
     
     footer p { 
         text-align: center; }
-    
-
 }
 
 
