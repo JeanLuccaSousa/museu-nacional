@@ -1,6 +1,9 @@
-Projeto Museu Nacional
+<h1><b>Projeto Museu Nacional</b></h1>
 
 Projeto de estudo realizado e estruturado com as seguintes tecnologias:
-- HTML, CSS, JAVASCRIPT, NORMALIZE e com a biblioteca AOS.
-
-- Versão Desktop e responsivo
+- HTML
+- CSS
+- JAVASCRIPT
+- NORMALIZE
+- Biblioteca AOS
+- Responsividade
