@@ -377,10 +377,17 @@ legend {
 
 @media (hover: hover) {
     a:hover {
-        color: #227115;
+        color: #227115; 
     }
 }
 
+@media (hover: none) {
+    a:hover {
+        color: #af670a !important; 
+        outline: none;           
+        -webkit-tap-highlight-color: transparent; 
+    }
+}
 
 
 
