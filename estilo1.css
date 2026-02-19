@@ -375,6 +375,12 @@ legend {
         text-align: center; }
 }
 
+@media (hover: hover) {
+    a:hover {
+        color: #227115;
+    }
+}
+
 
 
 
