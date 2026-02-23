@@ -8,4 +8,6 @@ Projeto de estudo realizado e estruturado com as seguintes tecnologias:
 - Biblioteca AOS
 - Responsividade
 
-https://museu-nacional-alpha.vercel.app/
+![Descrição da imagem](./museu-nacional.png)
+
+https://museu-nacional-alpha.vercel.app/ <br/>
