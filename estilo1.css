@@ -277,7 +277,6 @@ legend {
     }
 
     /* CORREÇÃO: menu fechado não cobre o site */
-
     #menu {
         opacity: 0;
         pointer-events: none;
@@ -380,6 +379,7 @@ legend {
         display: flex;
         flex-direction: column;
         align-items: center; 
+        padding: 0!important;
     }
 
     footer ul li a { 
@@ -389,6 +389,7 @@ legend {
     } 
 
     footer p.copyright { 
+        padding: 0!important;
         margin-top: 15px;
         text-align: center;
         text-transform: uppercase;
