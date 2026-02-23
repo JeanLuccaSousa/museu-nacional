@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Museu Nacional</title>
 
     <!--Estilo Customizado-->
@@ -18,6 +19,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRNGPLTKPK"></script>
+
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-PRNGPLTKPK'); </script>
 
     <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -118,16 +124,18 @@
             </aside><!--Fim Aside-->
             
             <footer>
-                <p>
-                    <a href="#container">home</a>
-                    <a href="#exposicoes">exposições</a>
-                    <a href="#historia">pesquisa</a>
-                    <a href="#depoimento">acervo</a>  <!--Poderia ter utilizado uma ul, em vez de parágrafo mas assim foi mais simples de fazer-->
-                    <a href="#video">vídeos</a>
-                    <a href="#galeria">fotos</a>
-                    <a href="#">contatos</a>
-                </p>
-                <p>2026<a href="#container">Museu Nacional - Todos os direitos reservados.</a></p>
+                <ul>
+                    <li><a href="#container">home</a></li>
+                    <li><a href="#exposicoes">exposições</a></li>
+                    <li><a href="#historia">pesquisa</a></li>
+                    <li><a href="#depoimento">acervo</a></li> 
+                    <li><a href="#video">vídeos</a></li>
+                    <li><a href="#galeria">fotos</a></li>
+                    <li><a href="#">contatos</a></li>
+                </ul>
+                <ul>
+                    <p class="copyright"> 2026  <a href="#container"> Museu Nacional - Todos os direitos reservados.</a></p>
+                </ul>
             </footer>
         </div><!--Fim principal-->
 

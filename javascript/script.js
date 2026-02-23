@@ -32,3 +32,5 @@ menuLinks.forEach(link => {
         btnMobile.setAttribute('aria-label', 'Abrir Menu');
     });
 });
+
+
