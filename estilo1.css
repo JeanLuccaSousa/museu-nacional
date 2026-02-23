@@ -172,6 +172,11 @@ footer ul li a {
     text-transform: uppercase;
 }
 
+footer p.copyright {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /**** Formulários ******/
 
 input {
